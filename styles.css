@@ -164,6 +164,7 @@ nav a {
 .first-page-image p {
     border: 2px solid var(--gray);
     height: 30px;
+    min-width: 80%;
     display: flex;
     align-items: center;
     margin-top: 30px;
@@ -401,30 +402,30 @@ nav a {
 }
 
 .point1{
-    top: 26px;
+    top: 27px;
     
 }
 
 .point2{
-    top:129px;
+    top:135px;
 }
 
 .point3{
-    top:231px;
+    top:242px;
 }
 
 .point4{
-    top:333px;
+    top:349px;
 }
 
 .point5{
-    top:435px;
+    top:456px;
 }
 
 .skill-line{
     border: 0.3px solid var(--primary);
     display: none;
-    height: 73%;
+    height: 77%;
     top: 26px;
     position: absolute;
     left: 0px;
@@ -605,10 +606,6 @@ nav a {
         width: 100%;
     }
 
-    .first-page-image p {
-        width: 350px;
-    }
-
     .about .about-img img {
         width: 100%;
     }
@@ -635,7 +632,7 @@ nav a {
     }
 
     .first-page-image {
-        width: 40%;
+        width: 64%;
     }
 
     .about-desc {
@@ -756,19 +753,19 @@ nav a {
 
 @media (max-width : 640px){
     .point3{
-        top:265px;
+        top: 279px;
     }
     
     .point4{
-        top:368px;
+        top: 386px;
     }
     
     .point5{
-        top:468px;
+        top: 493px;
     }
     
     .skill-line{
-        height: 80%;
+        height: 84%;
     }
 } 
 
@@ -784,18 +781,18 @@ nav a {
 
 @media (max-width : 529px){
     .point5{
-        top: 505px;
+        top: 530px;
     }
 
     .skill-line{
-        height: 86%;
+        height: 89%;
     }
 }
 
 @media (max-width : 518px) {
 
     .skill-line{
-        height: 77%;
+        height: 81%;
     }
 
     .first-page-image img {
@@ -812,12 +809,16 @@ nav a {
     }
 
     .first-page-image p {
-        width: 325px;
         padding-left: 5px;
     }
 
     .project{
         width: 320px;
+        height: 489px;
+    }
+
+    .project-details p {
+        height: 120px;
     }
 
     .quote {
@@ -857,22 +858,22 @@ nav a {
 @media (max-width : 388px) {
     
     .skill-line{
-        height: 83%;
+        height: 87%;
     }
 
     .point2{
-        top:163px;
+        top: 172px;
     }
     
     .point3{
-        top:301px;
+        top:316px;
     }
     
     .point4{
-        top:402px;
+        top:424px;
     }
     
     .point5{
-        top:539px;
+        top:567px;
     }
 }
