@@ -36,6 +36,17 @@ body {
     overflow-y: hidden;
 }
 
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: var(--background);
+}
+
 span {
     color: #C778DD;
 }
