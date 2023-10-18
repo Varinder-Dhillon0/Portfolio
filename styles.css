@@ -253,6 +253,37 @@ nav a {
     margin-left: 10px;
 }
 
+#projects{
+    margin-bottom: 30px;
+}
+
+.project-cate{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.cate{
+    background-color: var(--background);
+    border: 1.5px solid var(--gray);
+    color: var(--gray);
+    padding: 7px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: var(--small);
+    font-weight: 600;
+}
+
+.cate:hover{
+    background-color: var(--gray);
+    color: var(--background);
+}
+
+.selected{
+    background-color: var(--gray);
+    color: var(--background);
+}
+
 .projects-container {
     display: grid;
     width: 80%;
@@ -260,7 +291,6 @@ nav a {
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 30px 10px;
 }
 
@@ -400,47 +430,6 @@ nav a {
     top: 850px;
     left: 0;
     left: 60px;
-}
-
-.point1,.point2,.point3,.point4,.point5{
-    width: 11px;
-    height: 10px;
-    border-radius: 6px;
-    background-color: var(--primary);
-    position: absolute;
-    left: -5px;
-    display: none;
-}
-
-.point1{
-    top: 27px;
-    
-}
-
-.point2{
-    top:135px;
-}
-
-.point3{
-    top:242px;
-}
-
-.point4{
-    top:349px;
-}
-
-.point5{
-    top:456px;
-}
-
-.skill-line{
-    border: 0.3px solid var(--primary);
-    display: none;
-    height: 77%;
-    top: 26px;
-    position: absolute;
-    left: 0px;
-    color: var(--primary);
 }
 
 .arrow-1 {
@@ -653,10 +642,6 @@ nav a {
 
 @media (max-width : 818px) {
 
-    .point1,.point2,.point3,.point4,.point5,.skill-line{
-        display: block;
-    }
-
     .project {
         width: 370.58px;
         margin: 0 auto;
@@ -664,7 +649,7 @@ nav a {
 
     .projects-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         width: 100%;
     }
 
@@ -762,24 +747,6 @@ nav a {
 
 }
 
-@media (max-width : 640px){
-    .point3{
-        top: 279px;
-    }
-    
-    .point4{
-        top: 386px;
-    }
-    
-    .point5{
-        top: 493px;
-    }
-    
-    .skill-line{
-        height: 84%;
-    }
-} 
-
 @media (max-width : 612px) {
     .first-page-image {
         width: 70%;
@@ -790,21 +757,7 @@ nav a {
     }
 }
 
-@media (max-width : 529px){
-    .point5{
-        top: 530px;
-    }
-
-    .skill-line{
-        height: 89%;
-    }
-}
-
 @media (max-width : 518px) {
-
-    .skill-line{
-        height: 81%;
-    }
 
     .first-page-image img {
         width: 100%;
@@ -864,27 +817,8 @@ nav a {
         padding-left: 0%;
         padding-right: 0%;
     }
-}
 
-@media (max-width : 388px) {
-    
-    .skill-line{
-        height: 87%;
-    }
-
-    .point2{
-        top: 172px;
-    }
-    
-    .point3{
-        top:316px;
-    }
-    
-    .point4{
-        top:424px;
-    }
-    
-    .point5{
-        top:567px;
+    .cate{
+        margin-top: 10px;
     }
 }
