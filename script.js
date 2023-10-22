@@ -161,6 +161,16 @@ const projects = [{
     warning : ""
 },
 {
+    title: "The Paper Portfolio",
+    desc: "Nikolo Miranda's the paper portfolio design clone.",
+    techStack: ["Html" ,"CSS" , "Javascript"],
+    img : "https://user-images.githubusercontent.com/98728916/277154255-bc903f7a-5235-482e-b32c-f61e8c787370.png",
+    live : "https://thepaperportfolio.netlify.app/",
+    github : "https://github.com/Varinder-Dhillon0/Designs/tree/main/The%20Paper%20Portfolio",
+    category : "Frontend",
+    warning : "⚠️ Optimized for desktop only"
+},
+{
     title: "",
     desc: "",
     techStack: [],
