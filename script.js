@@ -71,7 +71,18 @@ a.forEach(element => {
 
 const category = document.querySelectorAll(".cate");
 
-const projects = [{
+const projects = [
+    {
+        title: "EthicalEdge",
+        desc: "The proposed AI-powered legal documentation assistant aims to revolutionize the process for individuals and small businesses.",
+        techStack: ["Mongodb","Express","React","Node","TailwindCSS","Razorpay","OpenAIapi"],
+        img : "https://raw.githubusercontent.com/Varinder-Dhillon0/EthicalEdge/main/client/public/Preview.png",
+        live : "",
+        github : "https://github.com/Varinder-Dhillon0/EthicalEdge",
+        category : "Full Stack",
+        warning : ""
+    },    
+{
     title: "Brewtopia",
     desc: "Cafe Management Site, where customers can login and order coffees and snacks.",
     techStack: ["Mongodb","Express","React","Node","CSS","Razorpay"],
@@ -93,7 +104,7 @@ const projects = [{
 },
 {
     title: "Creative Minds",
-    desc: "Social Media App where users can post there thoughts.",
+    desc: "Social Media App where users can post their thoughts.",
     techStack: ["Next.js", "React", "Firebase","CSS"],
     img : "/projectsimages/creativeminds.webp",
     live : "https://creativeminds.vercel.app/",
@@ -171,6 +182,16 @@ const projects = [{
     warning : "⚠️ Optimized for desktop only"
 },
 {
+    title: "BlueRex",
+    desc: "BlueRex specializes in crafting bespoke digital solutions to propel businesses towards unparalleled online success.",
+    techStack: ["Html" ,"CSS" , "Javascript"],
+    img : "https://raw.githubusercontent.com/Varinder-Dhillon0/BlueRex/main/assets/Preview.png",
+    live : "https://bluerex.vercel.app/",
+    github : "https://github.com/Varinder-Dhillon0/BlueRex",
+    category : "Frontend",
+    warning : ""
+},
+{
     title: "",
     desc: "",
     techStack: [],
@@ -193,7 +214,7 @@ const generateProjectHTML = (project) => {
             </div>
             <div class="project-details">
                 <h2>${project.title}</h2>
-                <p>${project.desc + (project.warning&& "<br/>" + project.warning)}</p>
+                <p>${project.desc + (project.warning ? "<br/>" + project.warning : "")}</p>
                 <div class="project-links">
                     ${project.live&& `<a rel="noopener" target="_blank" style="width: 72px;" href="${project.live}">
                     <img src="/assets/link.svg" alt="live-link">Live
